@@ -1,5 +1,7 @@
 package CS_2400.Project_1;
 
+package CS_2400.Project_1;
+
 public interface BagInterface<T>
 {
 	/** Gets the current number of entries in this bag.
@@ -14,7 +16,6 @@ public interface BagInterface<T>
 	public boolean add(T newEntry);
 	/** Removes one unspecified entry from this bag, if possible.
                @return  Either the removed entry, if the removal was successful, or null. */
-	public boolean isFull();
 	
 	public T remove();
 	/** Removes one occurrence of a given entry from this bag, if possible.
@@ -34,4 +35,21 @@ public interface BagInterface<T>
 	/** Retrieves all entries that are in this bag.
 		     @return  A newly allocated array of all the entries in the bag. Note: If the bag is empty, the 				returned array is empty. */
 	public T[] toArray();
+	/**
+	 */
+	public BagInterface <T> union(BagInterface <T> bag2);
+	/**
+	 * @param bag2 The second bag that has it's contents combined with this bag
+	 * @return A new bag with the contents of both bags
+	 */
+	public BagInterface <T> intersection(BagInterface <T> bag2);
+	/**
+	 * @param bag2 The second bag that has its contents compared for similarities with this bag
+	 * @return A new bag with the contents of the similarities with both bags
+	 */
+	public BagInterface<T> difference(BagInterface <T> bag2);
+	/**
+	 * @param bag2 The second bag that has its contents compared for differences with this bag
+	 * @return A new bag with the contents of the differences with both bags
+	 */
 } // end BagInterface
