@@ -1,5 +1,7 @@
 package CS_2400.Project_1;
 
+import java.util.Arrays;    
+
 public class ArrayBagTest {
     BagInterface<String> bagA = new ResizeableArrayBag<>();
         BagInterface<String> bagB = new ResizeableArrayBag<>();
