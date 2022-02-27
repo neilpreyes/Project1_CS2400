@@ -1,7 +1,5 @@
 package CS_2400.Project_1;
 
-package CS_2400.Project_1;
-
 public interface BagInterface<T>
 {
 	/** Gets the current number of entries in this bag.
