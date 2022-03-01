@@ -191,7 +191,7 @@ public class ResizeableArrayBag<T> implements BagInterface<T> {
    @Override
    public BagInterface<T> difference(BagInterface<T> aBag) 
    {
-      BagInterface <T> result = new ResizableArrayBag<>();
+      BagInterface < T > result = new LinkedBag<>();
       T[] myObj = this.toArray(); // creates copies of the objects
    
       for(int index = 0; index < myObj.length; ++index)
